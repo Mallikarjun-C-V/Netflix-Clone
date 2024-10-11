@@ -1,0 +1,668 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /* color: white; */
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    position: relative;
+    background-image: url(img/headerbg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    height: 70vh;
+}
+
+.box {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 62px;
+    padding: 10px;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    border: 1px solid white;
+    border-radius: 4px;
+    
+}
+
+.text {
+    position: relative; 
+    z-index: 10;
+    height: calc(100% - 62px);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    color: white;
+    opacity:unset;
+    margin-top: 4%;
+    gap: 22px;
+    padding:0 30px;
+}
+
+.text> :nth-child(1) {
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+ }
+
+.text> :nth-child(2) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.text> :nth-child(3) {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.line hr{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    border: none;  
+}
+
+.btn {
+    padding: 6px 14px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgb(127, 127, 127);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+}
+
+.btn-red-st {
+    position: relative;
+    z-index: 14;
+    background-color: red;
+    color: white;
+    padding: 5px 24px;
+    font-size: 18px;
+    border-radius: 7px;
+    font-weight: 900;
+}
+
+.address {
+    background-color: rgba(23, 23, 23, 0.8);
+    border: 1px solid rgb(126, 126, 126);
+    padding: 5px 25px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: white;
+}
+
+.address:hover {
+    padding: 7px 28px 7px 28px;
+    border: 1px solid rgb(160,160,160);
+    border-radius: 10px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+}
+
+.img1 img{
+    max-width: 35vw;
+    position: relative;
+    z-index: 10;
+    margin-left: 20%;
+    right: 1%;
+}
+
+.img1 video{
+    position: absolute;
+    right: 12.5%;
+    margin-top: 4.4%;
+}
+
+.first div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first div > :first-child {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.first div > :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.img2 img{
+    max-width: 35vw;
+    position: relative;
+    z-index: 10;
+    margin-left: 20%;
+    margin-right: 22%;
+    right: 20%;
+}
+
+.img2 video{
+    position: absolute;
+    margin-right: 0%;
+    margin-left: 0%;
+    right: 13%;
+    margin-top: 2%;
+}
+
+.one1{
+    padding-left: 0%;
+}
+
+.extra {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.extra1 {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;    
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.faq h2 {
+    font-size: 48px;
+    color: white;
+}
+
+.accordion{
+    margin: 60px auto;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1150px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #2d2d2d;
+    margin-bottom: 2px;
+    cursor:pointer;
+    position: relative;
+    border-radius: 4px;
+}
+
+.accordion li label:hover{
+    background-color: #444343;
+}
+
+label::after{
+    content: '+';
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+
+}
+
+.content{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background-color: #2d2d2d;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: max-height 0.5s, padding 0.5s;
+
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px;
+
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.address1 {
+    background-color: rgba(14, 14, 14, 0.8);
+    border: 1px solid rgb(126, 126, 126);
+    /* width: 60%; */
+    padding: 15px ;
+    padding-right: 30%;
+    border-radius: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn-red-st1 {
+    position: relative;
+    z-index: 14;
+    background-color: red;
+    color: white;
+    padding: 5px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 0px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+
+
+footer h2 {
+    margin-top: 30px;
+    color: white;
+    font-size: 15px;
+    margin-top: 80px;
+    margin-left: 20%;
+}
+
+.panel {
+    height: 280px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    text-decoration: none;
+    margin-left:10%;
+    margin-right: 10%;
+}
+
+.panel a {
+    text-decoration: none;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    color: #dddddd;
+    margin-top: 10px;
+}
+
+.E1 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(84, 84, 84);
+    padding: 3px 6px 3px 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+@media(max-width:1300px){
+    .img2 video{
+        right: 10%;
+    }
+}
+
+
+
+
+@media (max-width:1200px){
+
+    .first div > :first-child {
+        font-size: 40px;
+    }
+    
+    .first div > :nth-child(2) {
+        font-size: 21px;
+    }
+
+    .accordion{
+        max-width: 1000px;
+    }
+
+}
+
+@media (max-width:1100px){
+
+    .first div > :first-child {
+        font-size: 35px;
+    }
+    
+    .first div > :nth-child(2) {
+        font-size: 19px;
+    }
+
+    .faq h2{
+        font-size: 42px;
+    }
+
+    .accordion{
+        max-width: 900px;
+    }
+
+    .accordion li label{
+        font-size: 23px;
+        padding: 19px;
+    }
+}
+
+@media (max-width:1000px){
+    
+    .text> :nth-child(1) {
+        font-size: 40px;
+    }
+
+    .text> :nth-child(2) {
+        font-size: 18px;
+    }
+    
+    .text> :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .first div > :first-child {
+        font-size: 30px;
+    }
+    
+    .first div > :nth-child(2) {
+        font-size: 17px;
+    }
+
+    .faq h2{
+        font-size: 38px;
+    }
+
+    .accordion{
+        max-width: 800px;
+    }
+
+    .accordion li label{
+        font-size: 21px;
+        padding: 18px;
+    }
+
+    .extra{
+        padding-top: 0px;
+    }
+
+}
+
+
+@media (max-width:850px){
+
+    nav img{
+        width: 130px;
+    }
+
+    .btn {
+        padding: 5px 12px;
+        font-size: 13px;
+    }
+    
+    .text> :nth-child(1) {
+        font-size: 35px;
+    }
+
+    .text> :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .text> :nth-child(3) {
+        font-size: 14px;
+    }
+
+    .first div > :first-child {
+        font-size: 25px;
+    }
+    
+    .first div > :nth-child(2) {
+        font-size: 15px;
+    }
+
+    .faq h2{
+        font-size: 35px;
+    }
+
+    .accordion{
+        max-width: 650px;
+    }
+
+    .accordion li label{
+        font-size: 19px;
+        padding: 17px;
+    }
+
+}
+
+@media (max-width:785px){
+    .img2 video{
+        right: 8%;
+    }
+}
+
+@media (max-width:680px){
+
+    .text> :nth-child(1) {
+        font-size: 30px;
+    }
+
+    .text> :nth-child(2) {
+        font-size: 14px;
+    }
+
+    .text> :nth-child(3) {
+        font-size: 12px;
+    }
+
+    .first div > :first-child {
+        font-size: 20px;
+    }
+    
+    .first div > :nth-child(2) {
+        font-size: 14px;
+    }
+
+    .faq h2{
+        font-size: 30px;
+    }
+
+    .accordion{
+        max-width: 530px;
+    }
+
+    .accordion li label{
+        font-size: 17px;
+        padding: 15px;
+    }
+
+    .img2 video{
+        right: 7%;
+    }
+}
+
+@media (max-width:620px){
+    .img2 video{
+        right: 6%;
+    }
+}
+
+
+@media (max-width:550px){
+
+    .main{
+        height: 50vh;
+    }
+
+    .box{
+        height: 50vh;
+    }
+
+    nav img{
+        width: 100px;
+    }
+
+    .btn {
+        padding: 4px 10px;
+        font-size: 10px;
+    }
+
+    .btn-red-st{
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+
+    .address{
+        padding: 5px 22px;
+        font-size: 15px;
+    }
+
+    .text> :nth-child(1) {
+        font-size: 25px;
+    }
+
+    .text> :nth-child(2) {
+        font-size: 12px;
+    }
+
+    .text> :nth-child(3) {
+        font-size: 10px;
+    }
+
+    .first div > :first-child {
+        font-size: 18px;
+    }
+    
+    .first div > :nth-child(2) {
+        font-size: 12px;
+    }
+
+    .faq h2{
+        font-size: 25px;
+    }
+
+    .accordion{
+        max-width: 480px;
+    }
+
+    .accordion li label{
+        font-size: 15px;
+        padding: 14px;
+    }
+
+    .extra1{
+        padding-top: 12px;
+    }
+
+    .address1{
+        padding: 12px;
+        padding-right: 25%;
+        font-size: 15px;
+    }
+
+    ul a{
+        font-size: 0.6rem;
+    }
+
+    .E1{
+        padding: 2px 4px 2px 4px;
+        font-size: 0.6rem;
+    }
+
+    footer h2{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    
+
+    .first div > :first-child {
+        font-size: 15px;
+    }
+    
+    .first div > :nth-child(2) {
+        font-size: 10px;
+    }
+
+    .faq h2{
+        font-size: 20px;
+    }
+
+    .accordion{
+        max-width: 400px;
+    }
+
+    .accordion li label{
+        font-size: 13px;
+        padding: 12px;
+    }
+}
